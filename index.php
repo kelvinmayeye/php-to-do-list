@@ -36,7 +36,7 @@
 		<form action="" method="POST">
 		<div class="row justify-content-center pt-5">
 			<div class="header-card">
-				<h2>To Do list the list list</h2>
+				<h2>To Do list the list</h2>
 				<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Add Task</a>&nbsp;&nbsp;&nbsp;
 				<button type="submit" class="btn btn-danger" name="remove">Remove Task</button>&nbsp;&nbsp;&nbsp;
 				<button type="submit" class="btn btn-success" name="delete">Edit Task</button>
