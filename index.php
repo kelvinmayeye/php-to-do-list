@@ -16,7 +16,9 @@
   }
 
   	if(isset($_POST['remove'])){
-  		echo "<script>alert('Hellow am bout to do something');</script>";
+  		$chck = $_POST['checkname'];
+  		$obj->Deldata($chck);
+  		
   	}
 
 ?>

@@ -33,9 +33,9 @@ class Database
                 //echo $row['title'];
                 
                 echo '<p><div class="form-check">
-  				<input class="form-check-input" type="checkbox" value="'.$row['title'];'"';
+  				<input class="form-check-input" name="checkname" type="checkbox" value="'.$row['title'];'"';
 
-  				echo ">";
+  				//echo ">";
 
   				echo  '<label class="form-check-label" for="flexCheckDefault">'.$row["title"];'</label>
   				</div></p>';
@@ -57,7 +57,15 @@ class Database
 	//function to delete data
 	public function Deldata($dat){
 		$conn = $this->connect();
-		$sqldel = "DELETE from data_tbl where title = '$dat'";
+		
+		$sqldel = "DELETE from data_tbl where title = 'joggin'";
+		if ($conn->query($sqldel) === TRUE) {
+			// echo $dat;
+			// exit();
+ 		 echo "<script>alert('Task Deleted');</script>";
+		} else {
+ 		 echo "Error deleting record: " . $conn->error;
+		}
 	}
 
    }	
